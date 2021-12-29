@@ -17,7 +17,7 @@ jobs:
           release: 'tmf635-usage.name'
           namespace: 'default'
           chart: 'helm'
-          helm: 'helm3'
+          helm: 'helm repo update'
           token: '${{ github.token }}'
         env:
           KUBECONFIG_FILE: '${{ secrets.KUBECONFIG }}'
