@@ -9,9 +9,10 @@ image:
   tag: usage
   pullPolicy: IfNotPresent
 
-service:
-  type: ClusterIP
-  port: 8080
+proxy:
+  service:
+    type: ClusterIP
+    port: 8080
 
 ingress:
   enabled: false
